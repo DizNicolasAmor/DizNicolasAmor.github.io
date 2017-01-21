@@ -11,62 +11,73 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </head>
 
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <body data-spy="scroll">
 
     <!-- header -->
 
-    <header>
-      <div class="container">
+    <header id="main">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4">
-            <img class="img-responsive img-circle img-thumbnail" src="https://avatars2.githubusercontent.com/u/24809939?v=3&s=400" alt="my porfolio picture">
+          <div class="col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-3">
+            <img class="img-responsive img-circle" src="https://avatars2.githubusercontent.com/u/24809939?v=3&s=400" alt="my porfolio picture">
+          </div>
+          <div class="content">
+            <section class="section-title">Nicolás Amor Diz</section>
+            <h3 class="text-center">Personal Portfolio</h3>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xs-12 text-center">
-            <h1>Diz, Nicolás Amor</h1>
-            <h3>Personal Portfolio</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 text-center social">
-            <a href="https://github.com/DizNicolasAmor" target="_blank">
-              <i class="fa fa-github"></i>
-            </a>
-          </div>
-        </div>
-        <hr class="secDiv">
       </div>
     </header>
 
     <!-- end of header  -->
 
 
-    <!-- about-me  -->
+    <!-- about  -->
 
-    <section="about-me">
+    <section id="about" class="container-fluid">
+          <div class="row section-banner">
+            <div class="col-md-offset-3 col-md-6 text-center">
+              <div>
+                <span class="section-title about"> - About me - </span>
+              </div>
+            </div>
+          </div>
+
 
     </section>
-
 
     <!-- end of about me -->
 
 
     <!-- portfolio -->
 
-    <section class="portfolio">
-
+    <section id="portfolio" class="container-fluid">
+      <div class="content" margin-up="25%">
+        <div class="section-title"> - Porftolio - </div>
+      </div>
     </section>
-
 
     <!-- end of portfolio  -->
 
 
     <!-- contact -->
 
-    <section class="contact">
-
-    </contact>
+    <section id="contact" class="container-fluid">
+      <div class="content">
+        <div class="section-title"> - Contact - </div>
+        <h3 class="lead">You can write to me at:</h3>
+        <h3 class="mail lead text-center"><em><a href="mailto:diz.nicolasamor@gmail.com">diz.nicolasamor@gmail.com</a></em></h3>
+        <footer>
+            <span class="pull-left">&copy; 2017, Diz, Nicolás Amor</span>
+            <span class="pull-right">
+              <a href="#">
+                <i class="fa fa-arrow-circle-o-up"></i> Back to Top
+              </a>
+            </span>
+        </footer>
+      </div>
+    </section>
 
     <!-- end of contact  -->
 
