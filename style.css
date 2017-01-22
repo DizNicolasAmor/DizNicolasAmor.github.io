@@ -1,0 +1,126 @@
+body {
+  margin: 5% 5% 5% 5%;
+}
+
+fa-stack{
+  margin: -2px;
+}
+
+
+/* classes    */
+
+.content {
+  border-radius: 5%;
+  width: 80vw;
+  max-width: 45em;
+  padding: 1.5em 2em;
+  margin: 10% auto;
+  background: rgba(255, 255, 255, .75);
+  box-shadow: .5em .5em .5em rgba(0, 0, 0, .4);
+}
+
+.section-title {
+  font-family: 'lato', sans-serif;
+  font-size: 3.5em;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+  /* portfolio part */
+.galeria {
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    padding: 10px;
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.app {
+  border-radius: 5%;
+  width: 200px;
+  height: 175px; 
+  max-width: 50vw;
+  margin: .5em;
+  box-shadow: .3em .3em .3em rgba(0, 0, 0, .4);
+  border: .25em solid white;
+}
+
+/* Title captions for apps */
+span.title {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+}
+
+span.title span {
+  width: 195px;
+  height: 170px;
+  max-width: calc(50vw - 8px);
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.app span.title:hover {
+  opacity: 1;
+}
+
+span.title {
+  font-family: 'lato', sans-serif;
+  background: rgba(0,0,0,0.5);
+  font-size: 1.6em;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  display: table;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+
+/* targets */
+
+#main{
+  background: 100%, url("http://freephoto.cc/wp-content/uploads/2016/02/03-note-coffe-pen-preview-850x556.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#card1{
+  margin: 20px;
+}
+
+#about {
+  background: 100%
+  background-color: red;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+#portfolio{
+    background: 100%, url("https://upload.wikimedia.org/wikipedia/commons/1/1a/Code.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contact{
+    background: 100%, url("http://maxpixel.freegreatpicture.com/static/photo/1x/Metal-Fence-Letter-Boxes-Mailbox-Post-Poland-1499432.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
