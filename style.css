@@ -2,6 +2,20 @@ fa-stack{
   margin: -2px;
 }
 
+p{
+  text-align: justify;
+  
+}
+
+.icon-me{
+  text-align: center;
+  color: steelblue; 
+  font-size: 5em;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.30);
+}
+
 
 /* classes    */
 
@@ -25,14 +39,14 @@ fa-stack{
   padding-right: 15px;
 }
 
-  /* portfolio part */
+/* portfolio part */
 .galeria {
     width: 90%;
     margin: auto;
     list-style: none;
     padding: 10px;
     box-sizing: border-box;
-
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -41,7 +55,7 @@ fa-stack{
 .app {
   border-radius: 5%;
   width: 200px;
-  height: 175px;
+  height: 175px; 
   max-width: 50vw;
   margin: .5em;
   box-shadow: .3em .3em .3em rgba(0, 0, 0, .4);
@@ -99,13 +113,6 @@ span.title {
   margin: 20px;
 }
 
-#about {
-  background: 100%
-  background-color: red;
-  padding-top: 20px;
-  padding-bottom: 50px;
-}
-
 #portfolio{
     background: 100%, url("https://upload.wikimedia.org/wikipedia/commons/1/1a/Code.jpg");
   background-position: center center;
@@ -119,4 +126,3 @@ span.title {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
