@@ -75,7 +75,7 @@ p{
   width: 200px;
   height: 175px; 
   max-width: 50vw;
-  margin: .5em;
+  margin: .2em;
   box-shadow: .3em .3em .3em rgba(0, 0, 0, .4);
   border: .25em solid white;
 }
