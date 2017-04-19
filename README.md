@@ -4,7 +4,7 @@ Jan 2017, Diz Nicolás Amor
 This project is a challenge of FreeCodeCamp. 
 My profyle: https://www.freecodecamp.com/diznicolasamor 
 
-Also, this proyect is uploaded to http://codepen.io/DizNicolasAmor/pen/pReGNr
+Also, this proyect is uploaded to https://diznicolasamor.github.io/ and http://codepen.io/DizNicolasAmor/pen/pReGNr
 
 /*
 Recordatorio por si se cae alguna imagen de las de background: 
