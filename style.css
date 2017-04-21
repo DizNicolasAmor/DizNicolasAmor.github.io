@@ -51,65 +51,92 @@ p{
   font-weight: 600;
 }
 
-/* portfolio part */
-.galeria {
-    width: 90%;
+/* portfolio section */
+.gallery {
     margin: auto;
     list-style: none;
     padding: 10px;
     box-sizing: border-box;
-    
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.app {
-  border-radius: 5%;
+.gallery-item-wrapper {
+  margin: 10px auto;
+  display: inline-block;
   width: 200px;
-  height: 175px; 
-  max-width: 50vw;
-  margin: .2em;
-  box-shadow: .3em .3em .3em rgba(0, 0, 0, .4);
-  border: .25em solid white;
+  height: 200px;
+  position: relative;
 }
 
-/* Title captions for apps */
-span.title {
-  background: rgba(0,0,0,0.5);
-  color: white;
-  cursor: pointer;
+.gallery-image {
+  width: 200px;
+  height: 175px;
+  
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
+  position: absolute;
 }
 
-span.title span {
-  width: 195px;
-  height: 170px;
-  max-width: calc(50vw - 8px);
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.app span.title:hover {
-  opacity: 1;
-}
-
-span.title {
-  font-family: 'lato', sans-serif;
-  background: rgba(0,0,0,0.5);
-  font-size: 1.6em;
-  line-height: 1.2em;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: white;
-  cursor: pointer;
-  display: table;
+.gallery-image:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: LightGrey;
   opacity: 0;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  transition: opacity 500ms;
+ 
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .5s ease;
 }
+
+.gallery-image:hover:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  opacity: .7;
+}
+
+.gallery-text {
+  position: relative;
+  top: 175px;
+  display: inline-block;
+  
+  font: 100 16px 'Lato';
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: Black;
+  color: White;
+  border-top: 1px solid #eee;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: black;
+
+  letter-spacing: .7px;
+  line-height: 1.2;
+  cursor: default;
+}
+
 
 #moreProjects{
   font-weight: bold;
