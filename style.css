@@ -32,7 +32,7 @@ p{
   padding: 1.5em 2em;
   margin: 10% auto;
   background: rgba(255, 255, 255, .75);
-  box-shadow: .5em .5em .5em rgba(0, 0, 0, .4);
+  box-shadow: .5em .5em .5em .5em rgba(0, 0, 0, .4);
 }
 
 .section-title {
@@ -133,7 +133,7 @@ span.title {
 }
 
 #contact{
-    background: 100%, url("https://maxpixel.freegreatpicture.com/static/photo/1x/Metal-Fence-Letter-Boxes-Mailbox-Post-Poland-1499432.jpg");
+    background: 100%, url("http://maxpixel.freegreatpicture.com/static/photo/1x/Metal-Fence-Letter-Boxes-Mailbox-Post-Poland-1499432.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
