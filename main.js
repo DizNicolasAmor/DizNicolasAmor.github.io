@@ -29,4 +29,18 @@ $(document).ready(function() {
     $('#row4').addClass('hide');
     rowsShown = 1;
   });
+
+  $('#backToTop2').click(function(){
+    $('#row2').addClass('hide');
+    $('#row3').addClass('hide');
+    $('#row4').addClass('hide');
+    rowsShown = 1;
+  });
+
+  $('#backToTop3').click(function(){
+    $('#row2').addClass('hide');
+    $('#row3').addClass('hide');
+    $('#row4').addClass('hide');
+    rowsShown = 1;
+  });
 });
