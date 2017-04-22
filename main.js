@@ -21,4 +21,12 @@ $(document).ready(function() {
       $('#row'+rowsShown).removeClass('hide');
     }
   });
+  
+  //Collapse rows when backToTop
+  $('#backToTop').click(function(){
+    $('#row2').addClass('hide');
+    $('#row3').addClass('hide');
+    $('#row4').addClass('hide');
+    rowsShown = 1;
+  });
 });
