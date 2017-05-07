@@ -13,11 +13,7 @@ $(document).ready(function() {
   // refresh button
   $('#moreProjects').click(function(){
     rowsShown++;
-    if(rowsShown <= 5){
-      $('#row'+rowsShown).removeClass('hide');
-    }
-    rowsShown++;
-    if(rowsShown <= 5){
+    if(rowsShown <= 3){
       $('#row'+rowsShown).removeClass('hide');
     }
   });
