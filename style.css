@@ -67,16 +67,18 @@ h1,h3,p{
 }
 
 .gallery-item-wrapper {
-  margin: 10px auto;
+  margin: 10px;
+  margin-bottom: 20px;
   display: inline-block;
   width: 200px;
-  height: 200px;
+  height: 225px;
   position: relative;
 }
 
 .gallery-image {
   width: 200px;
   height: 175px;
+  top: 25px;
   
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
@@ -118,7 +120,6 @@ h1,h3,p{
 
 .gallery-text {
   position: relative;
-  top: 175px;
   display: inline-block;
   
   font: 100 16px 'Lato';
@@ -128,16 +129,35 @@ h1,h3,p{
   width: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: Black;
-  color: White;
-  border-top: 1px solid #eee;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border: black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 
   letter-spacing: .7px;
   line-height: 1.2;
   cursor: default;
+  
+  background: #FFEEEE;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DDEFBB, #FFEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.gallery-description{
+  position: relative;
+  display: inline-block;
+  top: 150px;
+  text-align: center;
+  font: 70 16px 'Lato';
+  margin: 0 auto;
+  width: 200px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: default;
+  
+  background: #FFEEEE;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DDEFBB, #FFEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 
