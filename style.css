@@ -238,6 +238,7 @@ p{font-family: 'Open Sans', sans-serif;}
 }
 
 #moreProjects{
+  font-size: 1.8vw;
   font-weight: bold;
   background-color: white;
   box-shadow: 2px 2px 6px #999999;
