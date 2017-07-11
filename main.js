@@ -1,5 +1,5 @@
 /*
-PersonalPortfolio
+PersonalPortfolio2
 - - - - - - - - - -
 https://diznicolasamor.github.io/
 Author:  Diz, Nicolás Amor (https://github.com/DizNicolasAmor/)
@@ -7,36 +7,55 @@ Author:  Diz, Nicolás Amor (https://github.com/DizNicolasAmor/)
 
 $(document).ready(function() {
 
-	// show more projects
-    // two rows are shown by default (row0 and row1).
-  var rowsShown = 1;
-  // refresh button
-  $('#moreProjects').click(function(){
-    rowsShown++;
-    if(rowsShown <= 3){
-      $('#row'+rowsShown).removeClass('hide');
-    }
+  // main buttons -> modal 
+  $('#aboutButton').click(function(){
+    $("#background").css("opacity", "0.4");
+    $('#about').show('slow');
+    $('.close').click(function(){
+      $('#about').fadeOut('slow');
+      $("#background").css("opacity", "1");
+    });
+  });
+
+  $('#projectsButton').click(function(){
+    $("#background").css("opacity", "0.4");
+    $('#projects').show('slow');
+    $('.close').click(function(){
+      $('#projects').fadeOut('slow');
+      $("#background").css("opacity", "1");
+    });
+  });
+
+  $('#contactButton').click(function(){
+    $("#background").css("opacity", "0.4");
+    $('#contact').show('slow');
+    $('.close').click(function(){
+      $('#contact').fadeOut('slow');
+      $("#background").css("opacity", "1");
+      $('#mailContainer').hide('slow');
+    });
+    $('#mailButton').click(function(){
+        $('#mailContainer').show('slow');
+    });
   });
   
-  //Collapse rows when backToTop
-  $('#backToTop').click(function(){
-    $('#row2').addClass('hide');
-    $('#row3').addClass('hide');
-    $('#row4').addClass('hide');
-    rowsShown = 1;
-  });
+  //moreProjects slider
+  var slider = $('#slider'),
+      
+      moveSlider = function() {
+        slider.animate({
+          marginLeft:'-'+200+'%'
+        } ,700, function(){
+          $('#slider .slider__section:first').insertAfter('#slider .slider__section:last');
+          slider.css('margin-left', '-'+100+'%');
+        });
+      }
 
-  $('#backToTop2').click(function(){
-    $('#row2').addClass('hide');
-    $('#row3').addClass('hide');
-    $('#row4').addClass('hide');
-    rowsShown = 1;
+  $('#slider .slider__section:first').insertAfter('#slider .slider__section:last');
+  slider.css('margin-left', '-'+100+'%');
+  
+  $('#moreProjects').on('click',function() {
+    moveSlider();
   });
-
-  $('#backToTop3').click(function(){
-    $('#row2').addClass('hide');
-    $('#row3').addClass('hide');
-    $('#row4').addClass('hide');
-    rowsShown = 1;
-  });
+  
 });
