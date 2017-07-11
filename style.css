@@ -1,71 +1,142 @@
-/* <!--
-Personal Portfolio
-  --------------------
+/*
+PersonalPortfolio2
+- - - - - - - - - -
 https://diznicolasamor.github.io/
-http://codepen.io/DizNicolasAmor/pen/pReGNr
-  
-Author:  Diz, Nicolás Amor (https://github.com/DizNicolasAmor)
-This project is a challenge posed by FreeCodeCamp. 
-  
--->   */
+Author:  Diz, Nicolás Amor (https://github.com/DizNicolasAmor/)
+*/
 
-h1,h3,p{
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Sansita');
+
+
+#background {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #53346D, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #53346D, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: url("https://upload.wikimedia.org/wikipedia/commons/c/c3/Working_lat%28t%29e_%283583874642%29.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* background photos  */
+/*
+Original background photo: 
+https://upload.wikimedia.org/wikipedia/commons/c/c3/Working_lat%28t%29e_%283583874642%29.jpg
+
+Otras fotos copadas y royalty free para el portfolio: 
+1) https://cdn.pixabay.com/photo/2015/01/29/18/30/keyboard-616492_960_720.jpg
+2) https://cdn.pixabay.com/photo/2014/08/12/12/12/computer-416569_960_720.jpg
+3) https://cdn.pixabay.com/photo/2014/04/05/11/08/nobody-314697_960_720.jpg
+*/
+
+/*  HEADER  */
+.mainContainer{
+  padding: 1.5em 2em;
+  margin: 5% auto;
+  width: 75%;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+}
+
+.title, .subtitle{
+  font-family: 'Sansita', sans-serif;
+  color: Azure;
+  text-align: center;  
+  margin:0;
+  cursor: default;
+}
+
+#name{font-size: 8vw;}
+
+#f-e-d{font-size: 4vw;}
+
+#presentation:hover{text-shadow: 0px 3px 6px rgba(0, 0, 0, .4) !important;}
+  
+#mainButtons{text-align: center;}
+
+.btn{
+  font-size: 2vw;
+  margin: 1px;
+  background: none;
+}
+.btn:hover{
+  color: White !important;
+  border: 1px solid blue !important;
+}
+
+/* shine effect  */
+#presentation{
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.9) 30%, rgba(0,0,0,.5) 50%, rgba(0,0,0,.9) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 4s infinite;
+}
+@-webkit-keyframes shine {
+  from {-webkit-mask-position: 150%;}
+  to {-webkit-mask-position: -50%;}
+}
+/* end of HEADER*/
+
+
+/*  ABOUT  */
+#about, #contact, #projects{
+  display: none;
   text-align: justify;
   cursor: default;
 }
 
-.icon-me{
-  text-align: center;
-  color: steelblue; 
-  font-size: 5em;
-  padding-top: 20px;
-  padding-bottom: 25px;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.30);
-}
-
-
-/* classes    */
-
-.content {
-  border-radius: 5%;
-  width: 80vw;
-  max-width: 45em;
-  padding: 1.5em 2em;
-  margin: 10% auto;
-  background: rgba(255, 255, 255, .75);
-  box-shadow: .5em .5em .5em .5em rgba(0, 0, 0, .4);
-}
-
-.section-title {
-  font-family: 'lato', sans-serif;
-  font-size: 2.0em;
-  font-weight: 600;
-  text-align: center;
-  padding-top: 0px;
-  padding-left: 15px;
-  padding-right: 15px;
-  cursor: default;
-}
+p{font-family: 'Open Sans', sans-serif;}
 
 .subtitle{
-  font-family: 'lato', sans-serif;
-  font-size: 1.5em;
-  font-weight: 600;
-  cursor: default;
+  font-family: 'Sansita', sans-serif;
+  color: Black;
+  text-align: center;
+  margin-bottom: 3%;
+  letter-spacing: .7px;
 }
 
-/* portfolio section */
-.gallery {
-    margin: auto;
-    list-style: none;
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.myImage{
+  text-align: left;
+  border-radius: 5%;
+  width: 100%;
 }
 
+.container{
+  border-radius: 5%;
+  padding: 1.5em 2em;
+  margin: 5% auto;
+  background: rgb(255, 255, 255);
+  box-shadow: .5em .5em .5em .5em rgba(0, 0, 0, .4);
+  width: 75%;
+  max-width: 600px;
+  min-height: 70%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;  
+  z-index: 1;
+}
+
+.close{
+  position: absolute; 
+  top: 5%; 
+  left: 95%;
+  color: Black;
+  text-align: center;
+}
+/* end of ABOUT */
+
+
+/*  PROJECTS  */
 .gallery-item-wrapper {
   margin: 10px;
   margin-bottom: 20px;
@@ -114,15 +185,14 @@ h1,h3,p{
   bottom: 0;
   left: 0;
   right: 0;
-  
   opacity: .7;
 }
 
 .gallery-text {
   position: relative;
   display: inline-block;
-  
-  font: 100 16px 'Lato';
+
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   margin: 0 auto;
   text-align: center;
@@ -136,9 +206,10 @@ h1,h3,p{
   line-height: 1.2;
   cursor: default;
   
-  background: #FFEEEE;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #DDEFBB, #FFEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #C9D6FF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .gallery-description{
@@ -146,7 +217,7 @@ h1,h3,p{
   display: inline-block;
   top: 150px;
   text-align: center;
-  font: 70 16px 'Lato';
+  font-family: 'Open Sans', sans-serif;
   margin: 0 auto;
   width: 200px;
   padding-top: 5px;
@@ -155,18 +226,16 @@ h1,h3,p{
   border-bottom-right-radius: 5px;
   cursor: default;
   
-  background: #FFEEEE;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #DDEFBB, #FFEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+  background: #C9D6FF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
 
 #moreProjects{
   font-weight: bold;
   text-align: center;
-  border: 2px solid black;
   background-color: white;
-  margin-top: 3%;
   box-shadow: 2px 2px 6px #999999;
   -moz-box-shadow: 2px 2px 6px #999999;
   -webkit-box-shadow: 2px 2px 6px #999999;
@@ -175,34 +244,22 @@ h1,h3,p{
 }
 
 #moreProjects:hover {
-  background: #215f00;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #e4e4d9, #215f00);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #e4e4d9, #215f00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: Lavender;
+  color: Black !important;
 }
 
-/* targets */
-
-#main{
-  background: 100%, url("https://freephoto.cc/wp-content/uploads/2016/02/03-note-coffe-pen-preview-850x556.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.sliderContainer{
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
-#card1{
-  margin: 20px;
+#slider {
+  display: flex;
+  width: 400%;
 }
 
-#portfolio{
-    background: 100%, url("https://upload.wikimedia.org/wikipedia/commons/1/1a/Code.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+.slider__section {width: 100%;}
 
-#contact{
-    background: 100%, url("http://maxpixel.freegreatpicture.com/static/photo/1x/Metal-Fence-Letter-Boxes-Mailbox-Post-Poland-1499432.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+/*  CONTACT  */
+#mailContainer{display: none;}
