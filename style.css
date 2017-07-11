@@ -117,6 +117,7 @@ p{font-family: 'Open Sans', sans-serif;}
   background: rgb(255, 255, 255);
   box-shadow: .5em .5em .5em .5em rgba(0, 0, 0, .4);
   width: 75%;
+  min-width: 300px;
   max-width: 600px;
   min-height: 70%;
   position: absolute;
