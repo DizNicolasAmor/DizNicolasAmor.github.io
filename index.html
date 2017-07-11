@@ -1,135 +1,72 @@
- <!--
-Personal Portfolio
-- - - - - - - - - - 
+<!--
+PersonalPortfolio2
+- - - - - - - - - -
 https://diznicolasamor.github.io/
-http://codepen.io/DizNicolasAmor/pen/pReGNr
-  
-Author:  Diz, Nicolás Amor (https://github.com/DizNicolasAmor)
-
-This project is a challenge posed by FreeCodeCamp. 
-  
+Author:  Diz, Nicolás Amor (https://github.com/DizNicolasAmor/)
 -->
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Personal Portfolio</title>
-
-    <meta name="viewport" content="height=device-height, initial-scale=1.0, user-scalable=no"/>
-
-   <!-- Latest compiled and minified CSS -->
+    <title>PersonalPortfolio2</title>
+    
+    <meta name="viewport" content="height=device-height, initial-scale=1.0, user-scalable=no">
+    
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!--my css file-->
     <link rel="stylesheet" href="style.css">
-
+    
     <!-- font-awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
   </head>
 
-
-  <body data-spy="scroll">
-
-     <!-- header -->
-
-    <header id="main">
-      <div class="container-fluid">
-        <div id="card1" class="row">
-          <div class="col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-3">
-            <img class="img-responsive img-circle" src="https://avatars2.githubusercontent.com/u/24809939?v=3&s=400" alt="my porfolio picture">
-          </div>
-          <div class="content">
-            <section class="section-title">Nicolás Amor Diz</section>
-            <h3 class="text-center">Personal Portfolio</h3>
-
-            <div class="icon-block center clickable text-center">
-              <a href="https://github.com/DizNicolasAmor" target="_blank" title="GitHub">
-                <i class="fa fa-github fa-stack fa-2x"></i>
-              </a>
-              <a href="https://www.freecodecamp.com/diznicolasamor" target="_blank" title="FreeCodeCamp">
-                <i class="fa fa-fire fa-stack fa-2x"></i>
-              </a>
-              <a href="#contact" title="Mail"><i class="fa fa-envelope fa-stack fa-2x"></i>
-              </a>
-            </div>
-            <span class="pull-left">
-              <a href="https://diznicolasamor.github.io/PersonalPortfolioInSpanish/" target="_blank">Versión en español</a>
-            </span>
-          </div>
-
-
-        </div>
+  
+  <body>
+    <div id="background"></div>    
+    <!-- HEADER  -->
+    <header class="mainContainer">
+      <div id="presentation">
+        <h2 id="f-e-d" class="title">FRONT END DEVELOPER</h2>
+        <h1 id="name"class="title">Nicolás Diz</h1>
+      </div>
+      <div id="mainButtons">
+        <tr>
+          <td><button id="aboutButton" class="btn title">About</button></td>
+          <td><button id="projectsButton" class="btn title">Projects</button></td>
+          <td> <button id="contactButton" class="btn title">Contact</button></td>
+        </tr>
       </div>
     </header>
-
-    <!-- end of header  -->
-
-
-    <!-- about -->    
-    
-    <section id="about" class="container-fluid">
-      <div class="content">
-        <div class="section-title about">ABOUT ME</div>
-        <div class="icon-me"><i class="fa fa-user"></i></div>
-        <ul>
-          <li><p>I consider myself as a writer and a software developer, since I am passionate about creating and acquiring new knowledge.</p></li>
-          <li><p>I am interested in projects that pose an intellectual challenge and that can bring value to society.</p></li>
-        </ul>
-        
-        <div class="icon-me"><i class="fa fa-mortar-board"></i></div>
-        <ul>
-          <li><p>I studied in Colegio Nacional de Buenos Aires. </p></li>
-          <li><p>I have a Bachelor of Arts in Literature (Universidad de Buenos Aires) and a Literature Professor degree (Universidad de Buenos Aires). I work as literature professor.</p></li>
-          <li><p>I took courses in EducaciónIT ("Java Advanced", "Hibernate") and MOOC's (Udacity.com, FreeCodeCamp.com).</p></li>
-        </ul>
-
-        <div class="icon-me"><i class="fa fa-wrench"></i></div>
-        <div><p class="text-center">These are some tools that I handle: </p></div>
-        <ul>
-          <li><p>HTML5, CSS3, Bootstrap3, JavaScript, jQuery, Ajax, Java (J2SE), Hibernate, SQL Server, Git & GitHub. </p></li>
-        </ul>
-
-        <span class="pull-right">
-          <a href="#"><i id="backToTop" class="fa fa-chevron-up fa-2x" title="Back to top"></i></a>
-        </span>
-        &nbsp;
+    <!-- end of HEADER  -->
+    
+    <!-- ABOUT -->    
+    <section id="about">
+      <div class="container">
+        <h3 class="subtitle">ABOUT ME</h3>
+        <div class="col-xs-6">
+          <img class="myImage" src="https://avatars2.githubusercontent.com/u/24809939?v=3&s=400" alt="my porfolio picture">
+        </div>
+        <p>I am a Literature Professor in Buenos Aires and I am passionate about writing and programming.</p>
+        <p>I learned Front End in MOOC's (Udacity.com, FreeCodeCamp.com) and as a self-taught person. And I continue improving it. I am interested in projects that can bring value to society. </p>
+        <p>These are some tools that I handle: HTML5, CSS3, JavaScript, jQuery, AngularJS, Git & GitHub.</p>
+        <div class="close">x</div>
       </div>
     </section>
-
-    <!-- end of about -->
-
-
-    <!-- portfolio -->
+    <!-- end of ABOUT -->
     
-    <section id="portfolio" class="container-fluid">
-      <div class="content">
-        <div class="section-title">PROJECTS</div>
-        
-        <ul class="gallery">
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="container">
+        <h3 class="subtitle">PROJECTS</h3>
 
-          <div id="row0">
-            <!-- MotivationalQuotes -->
-            <li class="gallery-item-wrapper">
-              <a class="gallery-image" href="https://diznicolasamor.github.io/MotivationalQuotes/" target="_blank"><img src="images/MotivationalQuotes.png" width="200px" height="175px"/>
-              </a>
-              <div class="gallery-text">Motivational Quotes</div>
-              <div class="gallery-description">The user can see random motivational quotes.</div>
-            </li>
-
-            <!-- BlackComedyData -->
-            <li class="gallery-item-wrapper">
-              <a class="gallery-image" href="https://diznicolasamor.github.io/BlackComedyData/" target="_blank"><img src="images/BlackComedyData.png" width="200px" height="175px"/>
-              </a>
-              <div class="gallery-text">Black Comedy Data</div>
-              <div class="gallery-description">The user can see random BC data from Wikipedia API. </div>
-            </li>
-          </div>
-          
-          <div id="row1">
+        <div class="sliderContainer">
+          <div id="slider">
+            <div class="slider__section">
             <!-- TicTacToe -->
             <li class="gallery-item-wrapper">
-              <a class="gallery-image" href="https://diznicolasamor.github.io/TicTacToe/" target="_blank"><img src="images/TicTacToe.png" width="200px" height="175px"/>
+              <a class="gallery-image" href="https://diznicolasamor.github.io/TicTacToe/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Hacker_perdu.svg/200px-Hacker_perdu.svg.png" width="200px" height="175px"/>
               </a>
               <div class="gallery-text">Tic Tac Toe</div>
               <div class="gallery-description">The user can play Tic Tac Toe. Look at the algorithm. </div>
@@ -137,17 +74,17 @@ This project is a challenge posed by FreeCodeCamp.
 
             <!-- TwitchDiary -->
             <li class="gallery-item-wrapper">
-              <a class="gallery-image" href="https://diznicolasamor.github.io/TwitchDiary/" target="_blank"><img src="images/TwitchDiary.png" width="200px" height="175px"/>
+              <a class="gallery-image" href="https://diznicolasamor.github.io/TwitchDiary/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/TwitchLogo.jpg" width="200px" height="175px"/>
               </a>
               <div class="gallery-text">Twitch API Search</div>
               <div class="gallery-description">The user can see if his or her favorite streamers are online.</div>
             </li>
           </div>
             
-          <div id="row2" class="hide">
+            <div class="slider__section">
             <!-- SimonGame -->
             <li class="gallery-item-wrapper">
-              <a class="gallery-image" href="https://diznicolasamor.github.io/SimonGame/" target="_blank"><img src="images/SimonGame.png" width="200px" height="175px"/>
+              <a class="gallery-image" href="https://diznicolasamor.github.io/SimonGame/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Simon_game.jpg" width="200px" height="175px"/>
               </a>
               <div class="gallery-text">Simon Game</div>
               <div class="gallery-description">The user can play Simon Game. Look at the algorithm.</div>
@@ -155,17 +92,35 @@ This project is a challenge posed by FreeCodeCamp.
 
             <!-- JavascriptCalculator -->
             <li class="gallery-item-wrapper">
-              <a class="gallery-image" href="https://diznicolasamor.github.io/JavascriptCalculator/" target="_blank"><img src="images/JavascriptCalculator.png" width="200px" height="175px"/>
+              <a class="gallery-image" href="https://diznicolasamor.github.io/JavascriptCalculator/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/6/62/Calculator.NET_Icon.png" width="200px" height="175px"/>
               </a>
               <div class="gallery-text">JavaScript Calculator</div>
               <div class="gallery-description">A Javascript calculator with eigth digits. </div>
             </li>
           </div>
 
-          <div id="row3" class="hide">
+            <div class="slider__section">
+              <!-- MotivationalQuotes -->
+              <li class="gallery-item-wrapper">
+                <a class="gallery-image" href="https://diznicolasamor.github.io/MotivationalQuotes/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/La_Manga_del_Mar_Menor1.jpg" width="200px" height="175px"/>
+                </a>
+                <div class="gallery-text">Motivational Quotes</div>
+                <div class="gallery-description">The user can see random motivational quotes.</div>
+              </li>
+
+            <!-- BlackComedyData -->
+            <li class="gallery-item-wrapper">
+              <a class="gallery-image" href="https://diznicolasamor.github.io/BlackComedyData/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/150px-Wikipedia-logo-v2.svg.png" width="200px" height="175px"/>
+              </a>
+              <div class="gallery-text">Black Comedy Data</div>
+              <div class="gallery-description">The user can see random BC data from Wikipedia API. </div>
+            </li>
+          </div>
+          
+            <div class="slider__section">
             <!-- GroundhogDayClock -->
             <li class="gallery-item-wrapper">
-              <a class="gallery-image" href="https://diznicolasamor.github.io/GroundhogDayClock/" target="_blank"><img src="images/GDClock.png" width="200px" height="175px"/>
+              <a class="gallery-image" href="https://diznicolasamor.github.io/GroundhogDayClock/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Clock_radio.png" width="200px" height="175px"/>
               </a>
               <div class="gallery-text">Groundhog-Day Clock</div>
               <div class="gallery-description">A Pomodoro Clock inspired in Bill Murray's film. </div>
@@ -173,51 +128,50 @@ This project is a challenge posed by FreeCodeCamp.
       
             <!-- JavaExercises -->
             <li class="gallery-item-wrapper">
-              <a class="gallery-image" href="https://github.com/DizNicolasAmor/JavaExercises" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Fondo_Java.png" width="200px" height="175px"/>
+              <a class="gallery-image" href="" target="_blank"><img src="" width="200px" height="175px"/>
               </a>
-              <div class="gallery-text">Java Exercises</div>
-              <div class="gallery-description">These are some Java Exercises from the courses that I took. </div>
+              <div class="gallery-text">Yoda TO-DO list</div>
+              <div class="gallery-description">Just a TO-DO list in Yoda's languaje. </div>
             </li>
           </div>
-        </ul>
-       
-        <button id="moreProjects" class="btn center-block">
-          <i class="fa fa-angle-double-down"></i> More Projects...
-        </button>
-
-       <span class="pull-right">
-          <a href="#"><i id="backToTop2" class="fa fa-chevron-up fa-2x" title="Back to top"></i></a>
-        </span>
-        &nbsp;
+          </div>
+        </div>
+        
+        <button id="moreProjects" class="btn center-block">More Projects...</button>
+        <div class="close">x</div>
       </div>
     </section>
+    <!-- end of PROJECTS  -->
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <h3 class="subtitle">CONTACT</h3>
+        <div class="text-center">
+          <a href="https://github.com/DizNicolasAmor" target="_blank" title="GitHub">
+            <i class="fa fa-github fa-stack fa-2x"></i>
+          </a>
+          <a href="https://www.freecodecamp.com/diznicolasamor" target="_blank" title="FreeCodeCamp">
+            <i class="fa fa-fire fa-stack fa-2x"></i>
+          </a>
+          <a  id="mailButton" href="#contact" title="Mail"><i class="fa fa-envelope fa-stack fa-2x"></i>
+          </a>
+        </div>
+
+        <div id="mailContainer">
+          <h3 class="lead">You can write to me at:</h3>
+          <h3 class="mail lead text-center"><em><a href="mailto:diz.nicolasamor@gmail.com">diz.nicolasamor@gmail.com</a></em></h3>
+          </div>
+        <div class="close">x</div>
+      </div>
+    </section>
+    <!-- end of CONTACT  -->
     
-    <!-- end of portfolio  -->
-
-
-    <!-- contact -->
-
-    <section id="contact" class="container-fluid">
-      <div class="content">
-        <div class="section-title">CONTACT</div>
-        <h3 class="lead">You can write to me at:</h3>
-        <h3 class="mail lead text-center"><em><a href="mailto:diz.nicolasamor@gmail.com">diz.nicolasamor@gmail.com</a></em></h3>
-       
-       <span class="pull-right">
-        <a href="#"><i id="backToTop3" class="fa fa-chevron-up fa-2x" title="Back to top"></i></a>
-       </span>
-       &nbsp;
-
-      </div>
-    </section>
-
-    <!-- end of contact  -->
-
     <!-- jQuery-->
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 
     <!-- my js file-->
     <script src="main.js" type="text/javascript" charset="utf-8"></script>
 
- </body>
+  </body>
 </html>
