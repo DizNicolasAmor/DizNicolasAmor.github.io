@@ -130,8 +130,8 @@ p{font-family: 'Open Sans', sans-serif;}
 
 .close{
   position: absolute; 
-  top: 5%; 
-  left: 95%;
+  top: 5px; 
+  right: 5px;
   color: Black;
   text-align: center;
 }
