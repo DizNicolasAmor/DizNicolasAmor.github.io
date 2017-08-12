@@ -1,8 +1,7 @@
 /*
-PersonalPortfolio2
-- - - - - - - - - -
-https://diznicolasamor.github.io/
-Author:  Diz, Nicolás Amor (https://github.com/DizNicolasAmor/)
+*Nico Diz
+*https://github.com/DizNicolasAmor
+*PersonalPortfolio3
 */
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Sansita');
@@ -21,7 +20,7 @@ Author:  Diz, Nicolás Amor (https://github.com/DizNicolasAmor/)
   background: -webkit-linear-gradient(to right, #53346D, #000000);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #53346D, #000000);
   background: linear-gradient(rgba(83, 52, 109, 0.6), rgba(0, 0, 0, 0.6)),
-		url("images/Portfolio2.jpg") no-repeat center center;  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    url("images/Portfolio3.jpg") no-repeat center center;  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -44,9 +43,13 @@ Otras fotos copadas y royalty free para el portfolio:
   margin: 5% auto;
   width: 75%;
   position: absolute;
-  top: 20%;
+  top: 30%;
   left: 0;
   right: 0;
+}
+
+#myLine{
+  width: 25%;
 }
 
 .title, .subtitle{
@@ -57,22 +60,29 @@ Otras fotos copadas y royalty free para el portfolio:
   cursor: default;
 }
 
-#name{font-size: 8vw;}
+#name{
+  font-size: 7vw;
+  cursor: pointer;
+}
 
 #f-e-d{font-size: 4vw;}
 
-#presentation:hover{text-shadow: 0px 3px 6px rgba(0, 0, 0, .4) !important;}
+#presentation:hover{text-shadow: 0px 3px 6px rgba(0, 0, 0, .6) !important;}
   
-#mainButtons{text-align: center;}
+#mainButtons{
+  text-align: center;
+}
 
 .btn{
   font-size: 2vw;
   margin: 1px;
   background: none;
 }
+
 .btn:hover{
   color: White !important;
-  border: 1px solid blue !important;
+  border: 1px solid grey !important;
+  cursor: pointer;
 }
 
 /* shine effect  */
@@ -121,7 +131,7 @@ p{font-family: 'Open Sans', sans-serif;}
   width: 75%;
   min-width: 300px;
   max-width: 600px;
-  min-height: 350px;
+  min-height: 250px;
   position: absolute;
   top: 0;
   left: 0;
