@@ -77,11 +77,12 @@ Otras fotos copadas y royalty free para el portfolio:
   font-size: 2vw;
   margin: 1px;
   background: none;
+  border: 1px solid grey !important;
 }
 
 .btn:hover{
   color: White !important;
-  border: 1px solid grey !important;
+  border: 2px solid darkgrey !important;
   cursor: pointer;
 }
 
