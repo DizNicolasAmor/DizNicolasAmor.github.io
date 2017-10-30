@@ -1,15 +1,20 @@
 <!--
-*Nico Diz
-*https://github.com/DizNicolasAmor
-*PersonalPortfolio3
--->
 
+Nico Diz
+
+https://github.com/DizNicolasAmor
+
+PersonalPortfolio
+
+You can see this project here: 
+- https://www.diznicolasamor.github.io
+-->
 
 <!DOCTYPE html>
 <html lang="en">
 
   <head>
-    <title>PersonalPortfolio2</title>
+    <title>PersonalPortfolio</title>
 
     <meta name="viewport" content="height=device-height, initial-scale=1.0, user-scalable=no">
 
@@ -18,21 +23,17 @@
 
     <!--my css file-->
     <link rel="stylesheet" href="style.css">
-    
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="css/font-awesome.min.css"/>
   </head>
 
   
   <body>
     <div id="background"></div>    
     <!-- HEADER  -->
-    <header class="mainContainer">
-      <div id="presentation">
-        <h1 id="name" class="title">Nico Diz</h1>
-        <hr id="myLine">
-        <h2 id="f-e-d" class="title">FRONT END DEVELOPER</h2>
-      </div>
+    <section class="mainContainer">
+      <h1 id="name">Nicolás Diz</h1>
+      <hr style="border-color: blue; width: 10%" id="myLine">
+      <h2 id="f-e-d">FRONT END DEVELOPER</h2>
+
       <div id="mainButtons">
         <tr>
           <td><button id="aboutButton" class="btn title">About</button></td>
@@ -40,20 +41,22 @@
           <td> <button id="contactButton" class="btn title">Contact</button></td>
         </tr>
       </div>
-    </header>
+    </section>
     <!-- end of HEADER  -->
     
     <!-- ABOUT -->    
     <section id="about">
       <div class="container">
-        <h3 id="aboutTitle" class="subtitle">ABOUT ME</h3>
+        <h1 id="aboutTitle">ABOUT ME</h1>
         <div id="aboutBody">
-          <div class="col-xs-6">
-            <img class="myImage" src="https://avatars2.githubusercontent.com/u/24809939?v=3&s=400" alt="my porfolio picture">
+          <div class="col-md-6">
+            <img src="https://avatars2.githubusercontent.com/u/24809939?v=3&s=400" alt="Nicolás Diz" width="200px" height="200px">
           </div>
-          <p>I am a Literature Professor in Buenos Aires and I am passionate about writing and programming. </p>
-          <p>I learned Front End in MOOC's (Udacity.com, FreeCodeCamp.com), books and lots of practice. And I continue improving it. I am interested in projects that can bring value to society. </p>
-          <p>These are some tools that I handle: HTML5, CSS3, JavaScript, jQuery, Git & GitHub. </p>
+          <div class="col-md-6">
+            <p>I am a Literature Professor in Buenos Aires and I am passionate about writing and programming. </p>
+            <p>I learned Front End in MOOC's (Udacity.com, FreeCodeCamp.com), books and lots of practice. And I continue improving it.</p>
+            <p>I handle HTML5, CSS3, JavaScript, jQuery, Reactjs, Git & GitHub.</p>
+          </div>
         </div>
         <div class="close">x</div>
       </div>
@@ -63,90 +66,89 @@
     <!-- PROJECTS -->
     <section id="projects">
       <div class="container">
-        <h3 id="projectsTitle" class="subtitle">PROJECTS</h3>
+        <h1 id="projectsTitle">PROJECTS</h1>
 
         <div id="projectsBody">
         <div class="sliderContainer">
           <div id="slider">
             <div class="slider__section">
-            <!-- TicTacToe -->
-            <li class="gallery-item-wrapper">
-              <a class="gallery-image" href="https://diznicolasamor.github.io/TicTacToe/" target="_blank"><img src="images/TicTacToe.png" width="200px" height="175px"/>
-              </a>
-              <div class="gallery-text">Tic Tac Toe</div>
-              <div class="gallery-description">The user can play Tic Tac Toe. Look at the algorithm. </div>
-            </li>
 
-            <!-- TwitchDiary -->
-            <li class="gallery-item-wrapper">
-              <a class="gallery-image" href="https://diznicolasamor.github.io/TwitchDiary/" target="_blank"><img src="images/TwitchDiary.png" width="200px" height="175px"/>
-              </a>
-              <div class="gallery-text">Twitch API Search</div>
-              <div class="gallery-description">The user can see if his or her favorite streamers are online.</div>
-            </li>
-          </div>
-            
-            <div class="slider__section">
-            <!-- SimonGame -->
-            <li class="gallery-item-wrapper">
-              <a class="gallery-image" href="https://diznicolasamor.github.io/SimonGame/" target="_blank"><img src="images/SimonGame.png" width="200px" height="175px"/>
-              </a>
-              <div class="gallery-text">Simon Game</div>
-              <div class="gallery-description">The user can play Simon Game. Look at the algorithm.</div>
-            </li>
-
-            <!-- JavascriptCalculator -->
-            <li class="gallery-item-wrapper">
-              <a class="gallery-image" href="https://diznicolasamor.github.io/JavascriptCalculator/" target="_blank"><img src="images/JavascriptCalculator.png" width="200px" height="175px"/>
-              </a>
-              <div class="gallery-text">JavaScript Calculator</div>
-              <div class="gallery-description">A Javascript calculator with eigth digits. </div>
-            </li>
-          </div>
+              <div class="col-md-6">
+                <img src="images/TicTacToe.png" alt="Tic Tac Toe" width="200px" height="200px">
+              </div>
+              <div class="col-md-6">
+                <h3>Tic Tac Toe</h3>
+                <p>The user can play Tic Tac Toe with the computer in easy, medium or difficult level. </p>
+                <p> Look at the beautiful algorithm.</p>
+                <p>Techs: HTML5, CSS3, Bootstrap, Javascript and jQuery.</p>
+                <a href="https://diznicolasamor.github.io/TicTacToe/" target="_blank">View project.</a>
+              </div>
+            </div>
 
             <div class="slider__section">
-              <!-- MotivationalQuotes -->
-              <li class="gallery-item-wrapper">
-                <a class="gallery-image" href="https://diznicolasamor.github.io/MotivationalQuotes/" target="_blank"><img src="images/MotivationalQuotes.png" width="200px" height="175px"/>
-                </a>
-                <div class="gallery-text">Motivational Quotes</div>
-                <div class="gallery-description">The user can see random motivational quotes.</div>
-              </li>
 
-            <!-- BlackComedyData -->
-            <li class="gallery-item-wrapper">
-              <a class="gallery-image" href="https://diznicolasamor.github.io/BlackComedyData/" target="_blank"><img src="images/BlackComedyData.png" width="200px" height="175px"/>
-              </a>
-              <div class="gallery-text">Black Comedy Data</div>
-              <div class="gallery-description">The user can see random BC data from Wikipedia API. </div>
-            </li>
-          </div>
-          
+              <div class="col-md-6">
+                <img src="images/MotivationalQuotes.png" alt="Motivational Quotes" width="200px" height="200px">
+              </div>
+              <div class="col-md-6">
+                <h3>Motivational Quotes</h3>
+                <p>The user can see random motivational quotes and share them on Twitter.</p>
+                <p>Also, the user can share on Twitter the quote he chooses.</p>
+                <p>Techs: HTML5, CSS3, Bootstrap, Javascript and jQuery.</p>
+                <a href="https://diznicolasamor.github.io/MotivationalQuotes/" target="_blank">View project.</a>
+              </div>
+            </div>
+
             <div class="slider__section">
-            <!-- GroundhogDayClock -->
-            <li class="gallery-item-wrapper">
-              <a class="gallery-image" href="https://diznicolasamor.github.io/GroundhogDayClock/" target="_blank"><img src="images/GDClock.png" width="200px" height="175px"/>
-              </a>
-              <div class="gallery-text">Groundhog-Day Clock</div>
-              <div class="gallery-description">A Pomodoro Clock inspired in Bill Murray's film. </div>
-            </li>
-      
-            <!-- Yoda TODO list -->
-            <li class="gallery-item-wrapper">
-              <a class="gallery-image" href="https://diznicolasamor.github.io/YodaTodoList/" target="_blank"><img src="images/YodaTODOList.png" width="200px" height="175px"/>
-              </a>
-              <div class="gallery-text">Yoda TO-DO list</div>
-              <div class="gallery-description">Just a TO-DO list in Yoda's languaje. </div>
-            </li>
-          </div>
+
+              <div class="col-md-6">
+                <img src="images/BlackComedyData.png" alt="Black Comedy Data" width="200px" height="200px">
+              </div>
+              <div class="col-md-6">
+                <h3>Black Comedy Data</h3>
+                <p>The user can see random Black Comedy data from Wikipedia API.</p>
+                <p>Also, the user can do his own search. </p>
+                <p>Techs:  HTML5, CSS3, Bootstrap, Javascript, jQuery and AJAX.</p>
+                <a href="https://diznicolasamor.github.io/BlackComedyData/" target="_blank">View project.</a>
+              </div>
+            </div>
+
+            <div class="slider__section">
+
+              <div class="col-md-6">
+                <img src="images/CampersRanking.png" alt="Camper's Ranking" width="200px" height="200px">
+              </div>
+              <div class="col-md-6">
+                <h3>Camper's Ranking</h3>
+                <p>The user can see the FreeCodeCamp campers who have more points in the last 30 days or all the time.</p>
+                <p>The user can sort the list according to these two criteria. </p>
+                <p>Techs: HTML5, CSS3, Javascript, AJAX, Reactjs</p>
+                <a href="https://codepen.io/DizNicolasAmor/full/NayJmm" target="_blank">View project.</a>
+              </div>
+            </div>
+
+            <div class="slider__section">
+
+              <div class="col-md-6">
+                <img src="images/LynchTribute.jpg" alt="Lynch Tribute" width="200px" height="200px">
+              </div>
+              <div class="col-md-6">
+                <h3>David Lynch Tribute</h3>
+                <p>The user can see a tribute page to David Lynch with interesting info about this filmmaker.</p>
+                <p>Also, the user can play a simple quiz.</p>
+                <p>Techs: HTML5, CSS3, Bootstrap, Javascript and jQuery.</p>
+                <a href="https://diznicolasamor.github.io/LynchTribute" target="_blank">View project.</a>
+              </div>
+            </div>
+
           </div>
         </div>
         
         <div class="moreProjectsWraper">
-          <h4 id="moreProjects" class="btn">More Projects...</h4>
+          <h4 id="moreProjects" class="btn">Next...</h4>
         </div>
-		</div>
-
+        </div>
+        
         <div class="close">x</div>
       </div>
     </section>
@@ -155,22 +157,23 @@
     <!-- CONTACT -->
     <section id="contact">
       <div class="container">
-        <h3 id="contactTitle" class="subtitle">CONTACT</h3>
+        <h1 id="contactTitle">CONTACT</h1>
 
         <div id="contactBody">
         <div class="text-center">
           <a href="https://github.com/DizNicolasAmor" target="_blank" title="GitHub">
-            <i class="fa fa-github fa-stack fa-2x"></i>
+            <img src="images/githubIcon.png" width="30px" height="30px" />
           </a>
           <a href="https://www.freecodecamp.com/diznicolasamor" target="_blank" title="FreeCodeCamp">
-            <i class="fa fa-fire fa-stack fa-2x"></i>
+            <img src="images/freecodecampIcon.png" width="30px" height="30px" />
           </a>
-          <a  id="mailButton" href="#contact" title="Mail"><i class="fa fa-envelope fa-stack fa-2x"></i>
+          <a  id="mailButton" href="#contact" title="Mail">
+            <img src="images/mailIcon.png" width="30px" height="30px" />
           </a>
         </div>
 
         <div id="mailContainer">
-          <h3 class="lead">You can write to me at:</h3>
+          <h4 class="lead">You can write to me at:</h4>
           <h3 class="mail lead text-center"><em><a href="mailto:diz.nicolasamor@gmail.com">diz.nicolasamor@gmail.com</a></em></h3>
         </div>
         </div>
