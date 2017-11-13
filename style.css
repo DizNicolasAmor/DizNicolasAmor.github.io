@@ -11,7 +11,7 @@
   height: 100%;
   z-index: -10;
   background: Lightgrey;  /* fallback for old browsers */
-  background: linear-gradient(rgba(128,128,128, 0.5), rgba(28,28,28, 0.5)), url("BORRARhttps://cdn.pixabay.com/photo/2016/11/23/14/45/apple-1853306_960_720.jpg") no-repeat center center;  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(White, Grey);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
