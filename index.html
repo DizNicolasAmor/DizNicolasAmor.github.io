@@ -1,193 +1,149 @@
 <!--
-
-Nico Diz
+Nico Diz 
 
 https://github.com/DizNicolasAmor
-
-PersonalPortfolio
-
-You can see this project here: 
-- https://www.diznicolasamor.github.io
 -->
 
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <title>Diz - Portfolio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="height=device-height, initial-scale=1.0, user-scalable=no">
 
-  <head>
-    <title>PersonalPortfolio</title>
+        <link 	href="http://fonts.googleapis.com/css?family=Cardo:400,400italic" 
+        		rel="stylesheet" type="text/css">
+   		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.v3.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    </head>
+    <body>
 
-    <meta name="viewport" content="height=device-height, initial-scale=1.0, user-scalable=no">
+	    <nav id="nav-bar" class="navbar navbar-inverse navbar-fixed-top">
+	      <div class="container-fluid">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle hvr-bounce-to-bottom collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+	            <span class="sr-only">Menu</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	        </div>
+	        <div class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav navbar-right">
+	            <li><a href="#about" id="about-nav">About me</a></li>
+	            <li><a href="#projects" id="projects-nav">Projects</a></li>
+	            <li><a href="#contact" id="contact-nav">Contact</a></li>
+	          </ul>
+	        </div>
+	      </div>
+	    </nav>
 
-    <!--my css file-->
-    <link rel="stylesheet" href="style.css">
-  </head>
 
-  
-  <body>
-    <div id="background"></div>    
-    <!-- HEADER  -->
-    <section class="mainContainer">
-      <h1 id="name">Nicolás Diz</h1>
-      <hr style="border-color: blue; width: 10%" id="myLine">
-      <h2 id="f-e-d">FRONT END DEVELOPER</h2>
+    	<div class="grid">
+			<section id="header">
+				<div class="presentation">
+					<h1>Nicolás Diz</h1>
+					<hr style="border-color: White;">
+				<h4>Front End Developer</h4>
+				<br>
+				<h5>
+					<a href="#about">
+						<img src="assets/images/arrow-down.png" alt="arrow-down" id="arrow-down">
+					</a>
+				</h5>
 
-      <div id="mainButtons">
-        <tr>
-          <td><button id="aboutButton" class="btn title">About</button></td>
-          <td><button id="projectsButton" class="btn title">Projects</button></td>
-          <td> <button id="contactButton" class="btn title">Contact</button></td>
-        </tr>
-      </div>
-    </section>
-    <!-- end of HEADER  -->
-    
-    <!-- ABOUT -->    
-    <section id="about">
-      <div class="container">
-        <h1 id="aboutTitle">ABOUT ME</h1>
-        <div id="aboutBody">
-          <div class="col-md-6">
-            <img src="https://avatars2.githubusercontent.com/u/24809939?v=3&s=400" alt="Nicolás Diz" width="200px" height="200px">
-          </div>
-          <div class="col-md-6">
-            <p>I am a Literature Professor in Buenos Aires and I am passionate about writing and programming. </p>
-            <p>I learned Front End in MOOC's (Udacity.com, FreeCodeCamp.com), books and lots of practice. And I continue improving it.</p>
-            <p>I handle HTML5, CSS3, Bootstrap, Sass, JavaScript, jQuery, AJAX, Reactjs, D3, Git & GitHub.</p>
-          </div>
-        </div>
-        <div class="close">x</div>
-      </div>
-    </section>
-    <!-- end of ABOUT -->
-    
-    <!-- PROJECTS -->
-    <section id="projects">
-      <div class="container">
-        <h1 id="projectsTitle">PROJECTS</h1>
+				</div>
 
-        <div id="projectsBody">
-        <div class="sliderContainer">
-          <div id="slider">
-            <div class="slider__section">
+			</section>
 
-              <div class="col-md-6">
-                <img src="images/MotivationalQuotes.png" alt="Motivational Quotes" width="200px" height="200px">
-              </div>
-              <div class="col-md-6">
-                <h3>Motivational Quotes</h3>
-                <p>The user can see random motivational quotes and share them on Twitter.</p>
-                <p>Also, the user can share on Twitter the quote he chooses.</p>
-                <p>Techs: HTML5, CSS3, Bootstrap, Javascript and jQuery.</p>
-                <a href="https://diznicolasamor.github.io/MotivationalQuotes/" target="_blank">View project.</a>
-              </div>
-            </div>
+			<section id="about">
+				<h3>About me</h3>
+				<hr style="border-color: black; width: 50px;">
 
-            <div class="slider__section">
+	          	<h3>
+		            <img src="assets/images/avatar.jpg" alt="Nicolás Diz" width="200px" height="200px" id="myAvatar">         		
+	          	</h3>
 
-              <div class="col-md-6">
-                <img src="images/BlackComedyData.png" alt="Black Comedy Data" width="200px" height="200px">
-              </div>
-              <div class="col-md-6">
-                <h3>Black Comedy Data</h3>
-                <p>The user can see random Black Comedy data from Wikipedia API.</p>
-                <p>Also, the user can do his own search. </p>
-                <p>Techs:  HTML5, CSS3, Bootstrap, Javascript, jQuery and AJAX.</p>
-                <a href="https://diznicolasamor.github.io/BlackComedyData/" target="_blank">View project.</a>
-              </div>
-            </div>
+				<div id="about-description">
+		            <p>I am a Literature Professor in Buenos Aires and I am passionate about writing and programming. </p>
+		            <p>I learned Front End in MOOC's (Udacity.com, FreeCodeCamp.com), books and lots of practice. And I continue improving it.</p>
+		            <p>I handle HTML5, CSS3, Bootstrap3, Sass, JavaScript, jQuery, Reactjs, d3js, Git & GitHub and other techs.</p>
+				</div>
+			</section>
+		
+			<section id="projects">
+				<h3>Projects</h3>
+				<hr style="border-color: black; width: 50px;">
+				<div class="row">
+					<div class="project-description col-md-6">
+						<h3 class="project-title">Piano Store</h3>
+			            <p>The user can see, sort and filter the products of this piano store. Techs: HTML5, CSS3, Sass, Javascript and Reactjs.</p>
+			            <h5>
+				            <a href="https://codepen.io/DizNicolasAmor/full/QaKPqe" target="_blank">View project.</a>
+			            </h5>
+					</div>
+		          	<h3 class="col-md-6">
+			            <img src="assets/images/tienda-de-pianos.png" alt="tienda-de-pianos" 
+			            class="project-image">
+		          	</h3>
+		        </div>
 
-            <div class="slider__section">
+				<div class="row">
+					<div class="project-description col-md-6">
+						<h3 class="project-title">Form</h3>
+			            <p>The user can book a date with his or her doctor. Techs: HTML5, CSS3, Bootstrap3, Javascript and jQuery-UI.</p>
+			            <h5>
+				            <a href="https://diznicolasamor.github.io/formulario-turno" target="_blank">View project.</a>
+			            </h5>
+					</div>
+		          	<h3 class="col-md-6">
+			            <img src="assets/images/formulario-turno.png" alt="formulario-turno" 
+			            class="project-image">
+		          	</h3>
+		        </div>
 
-              <div class="col-md-6">
-                <img src="images/dungeon-gameREADME.png" alt="Dungeon Game" width="200px" height="200px">
-              </div>
-              <div class="col-md-6">
-                <h3>Dungeon Game</h3>
-                <p>The user can play a Dungeon Game. </p>
-                <p> He can walk on the board, pick up weapons, potions, fight against enemies and travel to another level. </p>
-                <p>Techs: HTML5, CSS3, Sass, Javascript and Reactjs.</p>
-                <a href="https://codepen.io/DizNicolasAmor/full/ZaWrJK" target="_blank">View project.</a>
-              </div>
-            </div>
+				<div class="row">
+					<div class="project-description col-md-6">
+						<h3 class="project-title">Dungeon Game</h3>
+			            <p>The user can play a Dungeon Game. He can walk on the board, pick up weapons, potions, fight against enemies. Techs: HTML5, CSS3, Sass, Javascript and Reactjs.</p>
+			            <h5>
+				            <a href="https://codepen.io/DizNicolasAmor/full/ZaWrJK" target="_blank">View project.</a>
+			            </h5>
+					</div>
+		          	<h3 class="col-md-6">
+			            <img src="assets/images/dungeon-game.png" alt="dungeon-game" 
+			            class="project-image">
+		          	</h3>
+		        </div>
+			</section>
 
-            <div class="slider__section">
+			<section id="contact">
+				<h3>Contact</h3>
+				<hr style="border-color: black; width: 50px;">
 
-              <div class="col-md-6">
-                <img src="images/CampersRanking.png" alt="Camper's Ranking" width="200px" height="200px">
-              </div>
-              <div class="col-md-6">
-                <h3>Camper's Ranking</h3>
-                <p>The user can see the FreeCodeCamp campers who have more points in the last 30 days or all the time.</p>
-                <p>The user can sort the list according to these two criteria. </p>
-                <p>Techs: HTML5, CSS3, Javascript, AJAX, Reactjs</p>
-                <a href="https://codepen.io/DizNicolasAmor/full/NayJmm" target="_blank">View project.</a>
-              </div>
-            </div>
+				<h5>
+					<a href="#" target="_blank" id="mail">
+						<strong>diz.nicolasamor@gmail.com<br></strong>
+					</a>
+				</h5>
+				<br>
 
-            <div class="slider__section">
+				<h5>
+					<a href="https://github.com/DizNicolasAmor"  target="_blank">
+						<img style="border-radius:50%;"src="assets/images/iconGitHub.png" title="GitHub">
+					</a>
+					<a href="https://www.linkedin.com/in/nicol%C3%A1s-diz-0b51ba142/"  target="_blank">
+						<img style="border-radius:50%;" src="assets/images/iconLinkedIn.png" title="LinkedIn">
+					</a>
+					<a href="#" target="_blank">
+						<img style="border-radius:50%;" src="assets/images/iconMail.png" title="Mail">
+					</a>				
+				</h5>
+			</section>
+		</div>
 
-              <div class="col-md-6">
-                <img src="images/LynchTribute.jpg" alt="Lynch Tribute" width="200px" height="200px">
-              </div>
-              <div class="col-md-6">
-                <h3>David Lynch Tribute</h3>
-                <p>The user can see a tribute page to David Lynch with interesting info about this filmmaker.</p>
-                <p>Also, the user can play a simple quiz.</p>
-                <p>Techs: HTML5, CSS3, Bootstrap, Javascript and jQuery.</p>
-                <a href="https://diznicolasamor.github.io/LynchTribute" target="_blank">View project.</a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        
-        <div class="moreProjectsWraper">
-          <h4 id="moreProjects" class="btn">Next...</h4>
-        </div>
-        </div>
-        
-        <div class="close">x</div>
-      </div>
-    </section>
-    <!-- end of PROJECTS  -->
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <div class="container">
-        <h1 id="contactTitle">CONTACT</h1>
-
-        <div id="contactBody">
-        <div class="text-center">
-          <a href="https://github.com/DizNicolasAmor" target="_blank" title="GitHub">
-            <img src="images/githubIcon.png" width="30px" height="30px" />
-          </a>
-          <a href="https://www.linkedin.com/in/nicol%C3%A1s-diz-0b51ba142/" target="_blank" title="LinkedIn">
-            <img src="images/linkedInIcon.jpg" width="30px" height="30px" />
-          </a>
-          <a  id="mailButton" href="#contact" title="Mail">
-            <img src="images/mailIcon.png" width="30px" height="30px" />
-          </a>
-        </div>
-
-        <div id="mailContainer">
-          <h4 class="lead">You can write to me at:</h4>
-          <h3 class="mail lead text-center"><em><a href="mailto:diz.nicolasamor@gmail.com">diz.nicolasamor@gmail.com</a></em></h3>
-        </div>
-        </div>
-        
-        <div class="close">x</div>
-      </div>
-    </section>
-    <!-- end of CONTACT  -->
-    
-    <!-- jQuery-->
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-
-    <!-- my js file-->
-    <script src="main.js" type="text/javascript" charset="utf-8"></script>
-
-  </body>
+		<script type="text/javascript" src="assets/js/jquery.v3.min.js"></script><script type="text/javascript" src="assets/js/bootstrap.v3.min.js"></script>
+		<script type="text/javascript" src="assets/js/index.js"></script>
+    </body>
 </html>
